@@ -11,10 +11,31 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 	<div class="container">
-		
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span class="glyphicon glyphicon-cloud-upload"></span>
+						<h2>File Uploader</h2>
+						<h4>Narayanan Ts</h4>
+						<button class="btn btn-lg upload-btn" type="button">Upload File</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	<input type="file" name="uploads[]" id="upload-right" multiple="multiple"><br>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="js/uploads.js"></script>
 </body>
 </html>
