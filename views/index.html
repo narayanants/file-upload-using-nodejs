@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  	<link rel="stylesheet" type="text/css" href="../public/css/styles.css">
   	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,15 +27,18 @@
 						<span class="glyphicon glyphicon-cloud-upload"></span>
 						<h2>File Uploader</h2>
 						<h4>Narayanan Ts</h4>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar"></div>
+						</div>
 						<button class="btn btn-lg upload-btn" type="button">Upload File</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<input type="file" name="uploads[]" id="upload-right" multiple="multiple"><br>
+	<input type="file" name="uploads[]" id="upload-input" multiple="multiple"><br>
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  	<script type="text/javascript" src="js/uploads.js"></script>
+  	<script type="text/javascript" src="../public/js/uploads.js"></script>
 </body>
 </html>
