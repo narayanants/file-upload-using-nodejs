@@ -5,26 +5,21 @@ $('.upload-btn').on('click',function(){
 });
 
 $('#upload-input').on('change',function(){
+
+	//add the selected files to the files array
 	var files = $(this).get(0).files;
-	if(files.length>0){
+
+	//check for files length
+	if(files.length > 0){
 		// One or more files selected, process the file upload
-	}
-	var formData = new formData();
-	// loop through all the selected files
-	for(var i=0;i<files.length;i++){
-		var file = files[i];
-		// add the files to formData object for the data payload
-      	formData.append('uploads[]', file, file.name);
+		var formData = new FormData();
+		for(var i=0; i<files.length; i++){
+			var file = files[i];
+			//append files as payload to form data
+			formData.append('uploads[]',file,file.name);
+		}
 	}
 });
 
-$.ajax({
-	url:'/upload',
-	type:'POST',
-	data:formData,
-	processData: false,
-	contentType: false,
-	success:function(data){
-		console.log('upload successful');
-	}
-});
+
+
